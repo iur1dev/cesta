@@ -1,0 +1,21 @@
+body {
+  background-color: cornflowerblue;
+}
+
+.container_principal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fontBlack {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  opacity: 50%;
+}
