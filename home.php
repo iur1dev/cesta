@@ -16,8 +16,12 @@
             <i class="fa-solid fa-address-card"> Cadastrar Clientes</i><br>
         </a>
 
-        <a href="fazer_pedidos.php" class="text-center text-decoration-none fontBlack mb-3 fs-2">
-            <i class="fa-solid fa-address-card"> Fazer Pedidos</i><br>
+        <a href="pesquisar_clientes.php" class="text-center text-decoration-none fontBlack mb-3 fs-2">
+            <i class="fa-solid fa-address-card"> Pesquisar Clientes</i><br>
+        </a>
+
+        <a href="vendas.php" class="text-center text-decoration-none fontBlack mb-3 fs-2">
+            <i class="fa-solid fa-address-card"> Vendas</i><br>
         </a>
 
         <a href="" class="text-center text-decoration-none fontBlack mb-3 fs-2">
