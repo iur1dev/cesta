@@ -16,6 +16,8 @@ $sql_select2 = "select * from clientes where '$id' = id_clientes";
 $query_select2 = $conn->query($sql_select2) or die("erro sql " . $conn->error);
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
+
+
     $sql = "insert into vendas (id_clientes)
     values ('$id')";
     $query = $conn->query($sql) or die('erro sql ' . $conn->error);

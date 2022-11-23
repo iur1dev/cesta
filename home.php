@@ -12,25 +12,15 @@
 
 <body>
     <div class="container_principal">
-        <a href="cadastrar_clientes.php" class="text-center text-decoration-none fontBlack mb-3 fs-2">
-            <i class="fa-solid fa-address-card"> Cadastrar Clientes</i><br>
-        </a>
-
-        <a href="pesquisar_clientes.php" class="text-center text-decoration-none fontBlack mb-3 fs-2">
-            <i class="fa-solid fa-address-card"> Pesquisar Clientes</i><br>
-        </a>
-
-        <a href="" class="text-center text-decoration-none fontBlack mb-3 fs-2">
-            <i class="fa-solid fa-clipboard-question"> Consultas</i><br>
-        </a>
-
-        <a href="" class="text-center text-decoration-none fontBlack mb-3 fs-2">
-            <i class="fa-sharp fa-solid fa-warehouse"> Estoque</i><br>
-        </a>
-
-        <a href="" class="text-center text-decoration-none fontBlack mb-3 fs-2">
-            <i class="fa-solid fa-coins"> Controle Financeiro</i><br>
-        </a>
+        <div class="bg-danger p-3 rounded-3">
+            <a href="cadastrar_clientes.php" class="text-center text-decoration-none font_snow">
+                <i class="fa-solid fa-address-card tamanho_icone_home"><span class="fs-2">&nbsp;&nbsp;Cadastrar Clientes</span></i><br>
+            </a>
+            <br>
+            <a href="pesquisar_clientes.php" class="text-center text-decoration-none font_snow">
+                <i class="fa-solid fa-magnifying-glass tamanho_icone_home"><span class="fs-2">&nbsp;&nbsp;Pesquisar Clientes</span></i><br>
+            </a>
+        </div>
     </div>
 
     <?php include_once("includes/scripts.php") ?>
