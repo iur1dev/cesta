@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $bairro = $_POST['bairro'];
     $rua = $_POST['rua'];
     $numero = $_POST['numero'];
+    $empresa = $_POST['empresa'];
     $cep_ = $_POST['cep_'];
     $cidade_ = $_POST['cidade_'];
     $bairro_ = $_POST['bairro_'];
@@ -26,8 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     } elseif (empty($celular)) {
         echo '<div class="alert alert-danger text-center" role="alert">Preencha o Celular</div>';
     } else {
-        $sql = "insert into clientes (nome, cpf, rg, data_nasc, celular, cep, cidade, bairro, rua, numero, cep_, cidade_, bairro_, rua_, numero_)
-    values ('$nome', '$cpf', '$rg', '$data_nasc', '$celular', '$cep', '$cidade', '$bairro', '$rua', '$numero', '$cep_', '$cidade_', '$bairro_', '$rua_', '$numero_')";
+        $sql = "insert into clientes (nome, cpf, rg, data_nasc, celular, cep, cidade, bairro, rua, numero, empresa, cep_, cidade_, bairro_, rua_, numero_)
+    values ('$nome', '$cpf', '$rg', '$data_nasc', '$celular', '$cep', '$cidade', '$bairro', '$rua', '$numero', '$empresa', '$cep_', '$cidade_', '$bairro_', '$rua_', '$numero_')";
         $query = $conn->query($sql) or die('erro sql ' . $conn->error);
 
         header('Location: home.php');
@@ -91,6 +92,9 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
                 <input type="text" class="form-control" placeholder="Número" name="numero">
             </div>
             <h1 class="fw-bold text-center my-3">Endereço do Trabalho</h1>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="empresa" placeholder="Empresa" name="empresa">
+            </div>
             <div class="mb-3">
                 <input type="text" class="form-control cep" id="cep_" placeholder="Cep" name="cep_">
             </div>

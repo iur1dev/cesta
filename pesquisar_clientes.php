@@ -7,7 +7,7 @@ if (isset($_SESSION['atualizado'])) {
     echo '<div class="alert alert-success fw-bold text-center" role="alert">Atualizado</div>';
 }
 
-$sql_select = "select * from clientes";
+$sql_select = "SELECT * from clientes ORDER BY id_clientes desc";
 $query_select = $conn->query($sql_select) or die("erro sql" . $conn->error);
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
